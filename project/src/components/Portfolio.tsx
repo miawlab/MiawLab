@@ -51,7 +51,7 @@ export default function Portfolio() {
             </span>
           </div>
 
-          <h2 className="text-5xl md:text-7xl font-black text-white mb-8 leading-tight">
+          <h2 className="text-4xl md:text-6xl font-black text-white mb-8 leading-tight">
             Transformações reais,
             <br />
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-500">
