@@ -43,27 +43,28 @@ export default function Hero() {
           <span className="text-red-500">.</span>
         </h1>
 
-   {/* Subheadline */}
+        {/* Subheadline */}
 <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-12 text-gray-300 text-base sm:text-lg md:text-xl">
   {["Redes Sociais", "Tráfego Pago", "Inteligência Artificial"].map(
     (item, i) => (
       <React.Fragment key={i}>
+        {/* Texto + bolinha abaixo (só no mobile) */}
         <div className="flex flex-col items-center">
           <span className="relative">
             {item}
             <div className="absolute -bottom-1 left-0 right-0 h-px bg-red-500/50" />
           </span>
 
-          {/* 🔴 Bolinha — abaixo no mobile, entre no desktop */}
+          {/* Bolinha abaixo só no mobile */}
           {i < 2 && (
-            <>
-              {/* Mobile */}
-              <div className="block sm:hidden mt-2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-              {/* Desktop */}
-              <div className="hidden sm:block w-2 h-2 bg-red-500 rounded-full animate-pulse translate-y-2" />
-            </>
+            <div className="block sm:hidden mt-2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
           )}
         </div>
+
+        {/* Bolinha original (só no desktop) */}
+        {i < 2 && (
+          <div className="hidden sm:block w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+        )}
       </React.Fragment>
     )
   )}
