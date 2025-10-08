@@ -1,3 +1,9 @@
+/* 🌪️ Comportamento de rolagem suave global */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Tailwind base structure */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

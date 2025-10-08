@@ -3,21 +3,28 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      {/* 🔹 Logo no canto superior fixo */}
-      <div className="fixed top-6 left-1/2 transform -translate-x-1/2 z-50">
-        <img
-          src="/logo.png"
-          alt="Logo Miaw Lab"
-          className="h-28 w-auto md:h-32 transition-all duration-500 ease-in-out"
-        />
-      </div>
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
+     
+{/* Logo dentro da seção, rola junto com o conteúdo */}
+<div className="absolute top-12 left-1/2 -translate-x-1/2 z-20">
+  <button
+    onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+    className="focus:outline-none"
+  >
+    <img
+      src="/logo.png"
+      alt="Logo Miaw Lab"
+      className="h-28 w-auto md:h-32 select-none hover:scale-105 transition-transform duration-300"
+    />
+  </button>
+</div>
+
 
       {/* 🔹 Fundo cinematográfico */}
       <div className="absolute inset-0 bg-gradient-to-br from-black via-gray-900 to-black"></div>
       <div className="absolute inset-0 bg-gradient-radial from-red-900/20 via-transparent to-transparent"></div>
 
-      {/* 🔹 Grid de fundo animado */}
+      {/* 🔹 Grid animado */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute inset-0 bg-[linear-gradient(rgba(255,0,0,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(255,0,0,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-pulse"></div>
       </div>
@@ -27,8 +34,8 @@ export default function Hero() {
       <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-yellow-400 rounded-full animate-pulse"></div>
       <div className="absolute top-1/3 left-1/3 w-3 h-3 border border-red-500/30 rotate-45 animate-spin [animation-duration:10s]"></div>
 
-      {/* 🔹 Conteúdo principal */}
-      <div className="relative z-10 text-center max-w-6xl mx-auto px-6 mt-32 md:mt-40">
+      {/* 🔹 Conteúdo central */}
+      <div className="relative z-10 text-center max-w-6xl mx-auto px-6 pt-52 md:pt-60">
         <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 leading-tight">
           <span className="text-white">Transformamos </span>
           <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">
