@@ -30,41 +30,45 @@ export default function Hero() {
       {/* Conteúdo principal */}
       <div className="relative z-10 text-center max-w-6xl mx-auto px-4 sm:px-6 md:px-8">
         {/* Headline */}
-        <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-8 leading-snug tracking-tight">
-          <span className="text-white block">Transformamos</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black mb-8 leading-tight tracking-tight break-words">
+          <span className="text-white block">Transformamos</span>{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">
             perfis comuns
           </span>
-          <span className="block text-white mt-1 sm:mt-1.5">em</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 animate-pulse mt-0.5">
+          <br className="hidden sm:block" />
+          <span className="text-white">em</span>{" "}
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 animate-pulse">
             máquinas de vendas
           </span>
           <span className="text-red-500">.</span>
         </h1>
 
-        {/* Subheadline */}
-        <div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-12 text-gray-300 text-base sm:text-lg md:text-xl">
-          {["Redes Sociais", "Tráfego Pago", "Inteligência Artificial"].map(
-            (item, i) => (
-              <React.Fragment key={i}>
-                <div className="flex flex-col items-center">
-                  <span className="relative">
-                    {item}
-                    <div className="absolute -bottom-1 left-0 right-0 h-px bg-red-500/50" />
-                  </span>
+   {/* Subheadline */}
+<div className="flex flex-wrap justify-center items-center gap-4 md:gap-8 mb-12 text-gray-300 text-base sm:text-lg md:text-xl">
+  {["Redes Sociais", "Tráfego Pago", "Inteligência Artificial"].map(
+    (item, i) => (
+      <React.Fragment key={i}>
+        <div className="flex flex-col items-center">
+          <span className="relative">
+            {item}
+            <div className="absolute -bottom-1 left-0 right-0 h-px bg-red-500/50" />
+          </span>
 
-                  {/* 🔴 bolinha — abaixo do texto no mobile, entre textos no desktop */}
-                  {i < 2 && (
-                    <>
-                      <div className="block sm:hidden mt-2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                      <div className="hidden sm:block w-2 h-2 bg-red-500 rounded-full animate-pulse" />
-                    </>
-                  )}
-                </div>
-              </React.Fragment>
-            )
+          {/* 🔴 Bolinha — abaixo no mobile, entre no desktop */}
+          {i < 2 && (
+            <>
+              {/* Mobile */}
+              <div className="block sm:hidden mt-2 w-2 h-2 bg-red-500 rounded-full animate-pulse" />
+              {/* Desktop */}
+              <div className="hidden sm:block w-2 h-2 bg-red-500 rounded-full animate-pulse translate-y-2" />
+            </>
           )}
         </div>
+      </React.Fragment>
+    )
+  )}
+</div>
+
 
         {/* Botão CTA */}
         <button
