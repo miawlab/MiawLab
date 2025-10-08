@@ -53,7 +53,7 @@ export default function Benefits() {
         <div className="absolute top-3/4 right-1/6 w-6 h-6 bg-red-500/30 rounded-full animate-bounce [animation-delay:2s]"></div>
       </div>
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6">
         {/* Section Header */}
         <div className="text-center mb-20">
           <div className="inline-block mb-6">

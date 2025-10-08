@@ -10,15 +10,18 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black overflow-x-hidden">
-      <Hero />
-      <Pain />
-      <Solution />
-      <Portfolio />
-      <Benefits />
-      <Testimonials />
-      <FinalCTA />
-      <Footer />
+       <div className="w-full max-w-full overflow-x-hidden bg-gradient-to-b from-[#0a1224] to-[#040812]">
+      {/* Container Global de Padding e Centralização */}
+      <div className="px-4 sm:px-6">
+        <Hero />
+        <Pain />
+        <Solution />
+        <Portfolio />
+        <Benefits />
+        <Testimonials />
+        <FinalCTA />
+        <Footer />
+      </div>
     </div>
   );
 }

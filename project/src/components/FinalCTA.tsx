@@ -15,8 +15,7 @@ export default function FinalCTA() {
       <div className="absolute top-1/2 right-1/5 w-2 h-2 bg-yellow-400 rounded-full animate-pulse [animation-delay:2s]"></div>
       <div className="absolute bottom-1/4 left-1/3 w-1 h-1 bg-red-400 rounded-full animate-ping [animation-delay:0.5s]"></div>
 
-      <div className="relative z-10 max-w-6xl mx-auto px-6 text-center">
-        {/* Urgency Message */}
+      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 text-center">        {/* Urgency Message */}
         <div className="mb-12">
           <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-8 leading-tight">
             Sua marca pode continuar
