@@ -32,13 +32,14 @@ export default function Hero() {
         {/* Headline */}
         <h1 className="text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-black mb-6 leading-snug break-words">
           <span className="block text-white">Transformamos</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">
-            perfis comuns
-          </span>
-          <span className="block text-white mt-2">em</span>
-          <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 animate-pulse">
-            máquinas de vendas
-          </span>
+         <span className="block text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-red-400 to-red-600">
+  perfis comuns
+</span>
+<span className="block text-white mt-1 sm:mt-1.5">em</span>
+<span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 via-yellow-300 to-yellow-500 animate-pulse mt-0.5">
+  máquinas de vendas
+</span>
+
           <span className="text-red-500">.</span>
         </h1>
 
