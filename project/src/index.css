@@ -1,3 +1,9 @@
+body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* 🌪️ Comportamento de rolagem suave global */
 html {
   scroll-behavior: smooth;

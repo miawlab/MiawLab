@@ -3,8 +3,8 @@ import { ArrowRight } from "lucide-react";
 
 export default function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black">
-     
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-black w-full max-w-full overflow-x-hidden">
+
 {/* Logo dentro da seção, rola junto com o conteúdo */}
 <div className="absolute top-12 left-1/2 -translate-x-1/2 z-20">
   <button
